@@ -1,0 +1,644 @@
+/*======================================
+Estilos Globales
+========================================*/
+:root {
+  --color-gris: #3B3B3B;
+  --fuente-titulo: 'Roboto Mono', monospace;
+  --fuente-texto: 'Tajawal', sans-serif;
+  --fuente-secundaria: 'IBM Plex Serif', serif;
+  --color-crema: #F5ECD8;
+  --color-vinotinto: #904853;
+}
+
+* {
+  margin: 0;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Ubuntu', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Tajawal', sans-serif; */
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*======================================
+Header
+========================================*/
+
+.container-header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  font-family: var(--fuente-texto);
+  position: absolute;
+  z-index: 200;
+  transition: .5s all;
+
+}
+
+.container-header nav a {
+  text-decoration: none;
+  color: var(--color-gris);
+  font-family: var(--fuente-secundaria);
+  font-weight: 600;
+  transition: 0.5s all;
+}
+
+.container-header nav a:hover {
+  text-decoration: none;
+  color: var(--color-vinotinto);
+  transition: 0.5s all;
+}
+
+.container-header nav a::after{
+  content: "";
+  height: .4rem;
+  width: 0;
+  background-color: var(--color-vinotinto);
+  display: block;
+  transition: all 300ms;
+}
+
+.container-header nav a:hover::after{
+  width: 100%;
+}
+
+.banner {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../img/tupac2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* text-align: center;
+    flex-direction: column;
+    justify-content: center;*/
+  display: flex;
+  align-items: center;
+}
+
+.banner .title-principal {
+  font-size: 7rem;
+  color: var(--color-crema);
+  background-color: var(--color-gris);
+  font-family: var(--fuente-titulo);
+  width: 18rem;
+  font-weight: bold;
+
+}
+
+.banner .title-principal-3 {
+  font-size: 4rem;
+  color: var(--color-gris);
+  font-family: var(--fuente-titulo);
+  text-decoration: overline;
+  font-weight: bolder;
+
+}
+
+.banner .contenedor-title-principal {
+  background-color: var(--color-gris);
+  padding: 0rem 2rem 0rem 2rem;
+  width: 20rem;
+}
+
+.banner .contenedor-title-principal-2 {
+  background-color: var(--color-gris);
+  padding: 0rem 2rem 0rem 2rem;
+  width: 28rem;
+}
+
+.banner .title-principal-2 {
+  font-size: 7rem;
+  color: var(--color-crema);
+  font-family: var(--fuente-titulo);
+  font-weight: bold;
+}
+
+.title-header {
+  font-size: 5rem;
+  font-family: var(--fuente-titulo);
+  font-weight: bolder;
+  color: var(--color-gris);
+  text-decoration: none;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  user-select: none;
+}
+
+header nav .boton-dark {
+  height: 2.4rem;
+  width: 5rem;
+  border: 0.2rem solid var(--color-gris);
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  transition: .5s all;
+}
+
+header nav .bolita-blanca {
+  width: 2.1rem;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-vinotinto);
+}
+
+/*=============================================
+Contenedor Videos
+===============================================*/
+.contenedor-videos {
+  background-image: url(../img/tupac3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  margin-top: 2rem;
+}
+
+.contenedor-videos .title-videos {
+  color: #f0f0f0;
+  font-family: var(--fuente-texto);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/*=============================================
+Albumes
+===============================================*/
+.title-albumes {
+  font-size: 4rem;
+  color: var(--color-gris);
+  font-family: var(--fuente-titulo);
+  text-decoration: overline;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.title-albumes-dark {
+  font-size: 4rem;
+  color: var(--color-crema);
+  font-family: var(--fuente-titulo);
+  text-decoration: overline;
+  font-weight: bolder;
+  text-align: center;
+}
+
+main .album {
+  width: 30rem;
+  height: 40rem;
+  background-color: var(--color-crema);
+  box-shadow: 1rem 1rem 1rem var(--color-gris);
+  border-radius: 0.4rem;
+  transform: scale(1, 1);
+  transition: 1s all;
+}
+
+main .album:hover {
+  transform: scale(1.1, 1.1);
+
+}
+
+main .album .cont-img-album {
+  position: relative;
+}
+
+main .album .cont-img-album img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 0.4rem 0.4rem 0 0;
+
+
+}
+
+
+main .album .cont-img-album .titulo-de-album {
+  text-align: center;
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: var(--fuente-secundaria);
+  position: absolute;
+  z-index: 7;
+  text-shadow: 0.1rem 0.2rem 0.1rem purple;
+  bottom: 20%;
+  margin: 1rem;
+}
+
+main .album .cont-img-album .escuchar-album {
+  position: absolute;
+  z-index: 7;
+  bottom: 0;
+  margin: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: #FFF;
+}
+
+main .album .cont-img-album .escuchar-album:hover {
+  box-shadow: 0.5rem 0.5rem 1rem purple;
+}
+
+.discos h4 {
+  font-size: 2rem;
+}
+
+/*=============================================
+Footer
+===============================================*/
+.footer-ligth {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--color-gris);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-crema);
+  font-size: 2rem;
+  transition: 0.5s all;
+  padding: 3rem;
+  text-align: center;
+}
+
+.footer-dark {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--color-crema);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-gris);
+  font-size: 2rem;
+  transition: 0.5s all;
+  padding: 3rem;
+  text-align: center;
+}
+
+/*=============================================
+Tabla
+===============================================*/
+.conciertos {
+  width: 100%;
+  padding: 4rem;
+  background-image: url(../img/fondotabla.webp);
+
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabla {
+  width: 80%;
+
+}
+
+
+
+.tabla thead {
+  height: 6rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: var(--fuente-titulo);
+  background-color: rgba(10, 61, 99, .5);
+  color: var(--color-crema);
+
+}
+
+
+.tabla .tr,
+.tr td {
+  border: .1rem solid rgba(10, 61, 99, .5);
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fuente-texto);
+  color: #000;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.title-conciertos {
+  font-size: 4rem;
+  color: var(--color-crema);
+  font-family: var(--fuente-titulo);
+  text-decoration: overline;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+===============================================*/
+@media (max-width:768px) {
+
+  .footer-ligth,
+  .footer-dark {
+    font-size: 1.5rem;
+  }
+
+  .container-header-movil {
+
+    /* position: fixed; */
+    width: 100%;
+    height: 1rem;
+    background-color: var(--color-crema);
+
+  }
+
+  #menu2 {
+    background-color: var(--color-crema);
+
+  }
+
+  .title-header {
+    font-size: 3rem;
+    font-family: var(--fuente-titulo);
+    font-weight: bolder;
+    color: var(--color-gris);
+    text-decoration: none;
+  }
+
+
+  .contenedor-videos {
+    background-image: url(../img/tupac3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .menuIcon i {
+    font-size: 3rem;
+  }
+
+
+  .menu2 a {
+    font-size: 2rem;
+  }
+
+
+  main .album {
+    width: 25rem;
+    height: 35rem;
+    background-color: var(--color-crema);
+    box-shadow: 1rem 1rem 1rem var(--color-gris);
+    border-radius: 0.4rem;
+    transition: 1s all;
+  }
+
+  main .album:hover {
+    transform: scale(1);
+  }
+
+  main .title-albumes {
+    font-size: 3rem;
+    color: var(--color-gris);
+    font-family: var(--fuente-titulo);
+    text-decoration: overline;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  main .title-albumes-dark {
+    font-size: 3rem;
+    color: var(--color-crema);
+    font-family: var(--fuente-titulo);
+    text-decoration: overline;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .conciertos {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    background-image: url(../img/tupac3.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+/*======================================
+Clases items
+========================================*/
+
+.dark {
+  background-color: var(--color-gris);
+  transition: .5s all;
+}
+
+.ligth {
+  background-color: #f0f0f0;
+  transition: .5s all;
+  position: relative;
+}
+
+.dark-flotante {
+  height: 2.4rem;
+  width: 5rem;
+  border: 0.2rem solid #000;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  transition: .5s all;
+}
+
+.bolita-gris {
+  width: 2.1rem;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-gris);
+  transition: 1s all;
+}
+
+.header-scroll {
+  background-color: var(--color-crema);
+  transition: .5s all;
+  position: fixed;
+  box-shadow: 0.1rem 0.1rem 1rem var(--color-gris);
+  color: var(--color-gris);
+}
+
+.quitar {
+  display: none;
+  transition: 3s;
+}
+
+/*=============================================
+    PRELOAD
+===============================================*/
+.hidden {
+  overflow: hidden;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-crema);
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*=============================================
+Barra Scroll
+===============================================*/
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 114, 114);
+  border-radius: 0.5rem;
+}
+
+
+.loader {
+  background-color: var(--color-vinotinto);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  clip-path: circle(141.4% at 100% 0);
+  transition: clip-path 0.8s ease-in-out;
+}
+
+.loader2 {
+  clip-path: circle(0% at 100% 0);
+}

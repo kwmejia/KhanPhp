@@ -1,0 +1,386 @@
+:root {
+    --color-gris: #3B3B3B;
+    --fuente-titulo: 'Roboto Mono', monospace;
+    --fuente-texto: 'Tajawal', sans-serif;
+    --fuente-secundaria: 'IBM Plex Serif', serif;
+    --color-crema: #F5ECD8;
+    --color-vinotinto: #904853;
+}
+
+* {
+    margin: 0;
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Tajawal', sans-serif; */
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+/* ========================
+ Álbumes
+============================ */
+.container-header-albumes {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+    font-family: var(--fuente-texto);
+    position: fixed;
+    z-index: 200;
+    transition: .5s all;
+    background-color: var(--color-crema);
+    box-shadow: .1rem .1rem 2rem var(--color-gris);
+
+}
+
+
+.container-header-albumes nav a {
+    text-decoration: none;
+    color: var(--color-gris);
+    font-family: var(--fuente-secundaria);
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.container-header-albumes nav a:hover {
+    text-decoration: none;
+    color: var(--color-vinotinto);
+    transition: 0.5s all;
+}
+
+.container-header-albumes nav a:hover {
+    text-decoration: none;
+    color: var(--color-vinotinto);
+    transition: 0.5s all;
+}
+
+.container-header-albumes nav a::after {
+    content: "";
+    height: .4rem;
+    width: 0;
+    background-color: var(--color-vinotinto);
+    display: block;
+    transition: all 300ms;
+}
+
+.container-header-albumes nav a:hover::after {
+    width: 100%;
+}
+
+.banner-albumes {
+    padding-top: 2rem;
+    background-image: url(../img/ba-alb.webp);
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.banner-albumes .title-principal {
+    font-size: 7rem;
+    color: var(--color-crema);
+    background-color: var(--color-gris);
+    font-family: var(--fuente-titulo);
+    width: 18rem;
+    font-weight: bold;
+
+}
+
+
+.banner-albumes .contenedor-title-principal {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 20rem;
+}
+
+.banner-albumes .contenedor-title-principal-2 {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 33rem;
+}
+
+.banner-albumes .title-principal-2 {
+    font-size: 7rem;
+    color: var(--color-crema);
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+}
+
+
+
+
+/* ====================
+  Artista
+  ======================= */
+
+
+.banner-artista {
+    padding-top: 2rem;
+    background-image: url(../img/sobremi.webp);
+    background-position-y: -8rem;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.banner-artista .title-principal {
+    font-size: 7rem;
+    color: var(--color-crema);
+    background-color: var(--color-gris);
+    font-family: var(--fuente-titulo);
+    width: 18rem;
+    font-weight: bold;
+
+}
+
+
+.banner-artista .contenedor-title-principal {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 17rem;
+}
+
+.banner-artista .contenedor-title-principal-2 {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 30rem;
+}
+
+.banner-artista .title-principal-2 {
+    font-size: 7rem;
+    color: var(--color-crema);
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+}
+
+main .contenedor-artista {
+    height: 30rem;
+    background-color: var(--color-crema);
+    padding: 0;
+    box-shadow: 0.8rem 0.8rem 4rem var(--color-gris);
+
+}
+
+main .imagen-artista {
+    background-image: url(../img/ba-alb.webp);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+main .descripcion-artista {
+    text-align: justify;
+    font-family: var(--fuente-texto);
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+
+
+main .contenedor-video {
+    height: 50rem;
+}
+
+/* ====================
+  Video
+======================= */
+
+.banner-video {
+    padding-top: 2rem;
+    background-image: url(../img/auto.webp);
+    background-position-y: -8rem;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.banner-video .title-principal {
+    font-size: 7rem;
+    color: var(--color-crema);
+    background-color: var(--color-gris);
+    font-family: var(--fuente-titulo);
+    width: 18rem;
+    font-weight: bold;
+
+}
+
+
+.banner-video .contenedor-title-principal {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 17rem;
+}
+
+.banner-video .contenedor-title-principal-2 {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 30rem;
+}
+
+.banner-video .title-principal-2 {
+    font-size: 7rem;
+    color: var(--color-crema);
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+}
+
+
+/* ====================
+  Video
+======================= */
+
+.banner-login {
+    padding-top: 2rem;
+    background-image: url(../img/shoes.webp);
+    background-position-y: -8rem;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.banner-login .title-principal {
+    font-size: 7rem;
+    color: var(--color-crema);
+    background-color: var(--color-gris);
+    font-family: var(--fuente-titulo);
+    width: 18rem;
+    font-weight: bold;
+
+}
+
+
+.banner-login .contenedor-title-principal {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 17rem;
+}
+
+.banner-login .contenedor-title-principal-2 {
+    background-color: var(--color-gris);
+    padding: 0rem 2rem 0rem 2rem;
+    width: 30rem;
+}
+
+.banner-login .title-principal-2 {
+    font-size: 7rem;
+    color: var(--color-crema);
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+}
+
+
+
+.contenedor-login .login {
+    font-size: 1.8rem;
+    font-family: var(--fuente-texto);
+    font-weight: 600;
+    position: relative;
+}
+
+.contenedor-login .img-user {
+    width: 16rem;
+    height: 16rem;
+    background-image: url(../img/sobremi.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    box-shadow: 0.8rem 0rem 4rem var(--color-gris);
+
+}
+
+.contenedor-login .formulario-login {
+    background-color: var(--color-crema);
+    padding: 8rem 4rem 4rem 4rem;
+    margin-top: 6rem;
+    box-shadow: 0.8rem 0.8rem 4rem var(--color-gris);
+    border-radius: 1rem;
+    width: 30rem;
+    height: min-content;
+
+}
+
+.contenedor-login .formulario-login input,
+label {
+    height: 5rem;
+    font-size: var(--fuente-texto);
+    color: var(--color-gris);
+}
+
+.contenedor-login .formulario-login h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--color-vinotinto);
+}
+
+.contenedor-login .formulario-login .btn-submit {
+    height: 5rem;
+    background-color: var(--color-gris);
+    color: var(--color-crema);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+
+@media (max-width:768px) {
+    main .descripcion-artista {
+        text-align: justify;
+        font-family: var(--fuente-texto);
+        font-size: 1.5rem;
+        font-weight: 600;
+
+    }
+
+    main .contenedor-artista {
+        height: max-content;
+        background-color: var(--color-crema);
+        padding: 0;
+        box-shadow: 0.8rem 0.8rem 4rem var(--color-gris);
+
+    }
+
+    main .contenedor-video {
+        height: 17rem;
+    }
+
+    .banner-albumes .title-principal-2 {
+        font-size: 3rem;
+        color: var(--color-crema);
+        font-family: var(--fuente-titulo);
+        font-weight: bold;
+    }
+
+    .banner-albumes .title-principal {
+        font-size: 3rem;
+        color: var(--color-crema);
+        background-color: var(--color-gris);
+        font-family: var(--fuente-titulo);
+        width: 18rem;
+        font-weight: bold;
+
+    }
+
+    .banner-albumes .contenedor-title-principal {
+        background-color: var(--color-gris);
+        padding: 0rem 2rem 0rem 2rem;
+        width: 10rem;
+    }
+
+    .banner-albumes .contenedor-title-principal-2 {
+        background-color: var(--color-gris);
+        padding: 0rem 2rem 0rem 2rem;
+        width: 18rem;
+    }
+}

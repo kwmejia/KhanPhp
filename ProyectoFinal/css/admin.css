@@ -1,0 +1,217 @@
+/*======================================
+Estilos Globales
+========================================*/
+:root {
+    --color-gris: #3B3B3B;
+    --fuente-titulo: 'Roboto Mono', monospace;
+    --fuente-texto: 'Tajawal', sans-serif;
+    --fuente-secundaria: 'IBM Plex Serif', serif;
+    --color-crema: #F5ECD8;
+    --color-vinotinto: #904853;
+    --color-verde: #71B100;
+    --color-gris-claro: #727171;
+}
+
+* {
+    margin: 0;
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Tajawal', sans-serif; */
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+main .menu-admin {
+    width: 100%;
+    height: min-content;
+    background-color: var(--color-gris-claro);
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--color-gris);
+    padding: 2rem 0 2rem;
+    border-radius: .5rem;
+}
+
+main .colum {
+    padding: 4rem 1rem 2rem 1rem;
+    text-align: center;
+    height: min-content;
+    width: 100%;
+}
+
+main .colum .imagen-admin {
+    height: 12rem;
+    width: 12rem;
+    background-image: url(../img/admin2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+main .colum .nombre-admin {
+    font-size: 3rem;
+    font-family: var(--fuente-titulo);
+    color: var(--color-crema);
+}
+
+
+main .opcion-albumes {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--color-verde);
+    color: var(--color-crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: var(--fuente-texto);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: .5s all;
+    border: none;
+}
+
+
+main .opcion-albumes:hover {
+    background: #92ce2b;
+
+}
+
+
+main .contenedor-formularios {
+    box-shadow: 0.1rem 0.1rem 1rem var(--color-gris-claro);
+    width: 100%;
+    height: min-content;
+    background-image: url(../img/tupac3.png);
+    border-radius: .5rem;
+
+
+}
+
+
+fieldset {
+    border: 0.1rem solid var(--color-gris-claro);
+    padding: 4rem;
+    font-size: 1.8rem;
+    font-family: var(--fuente-texto);
+    font-weight: bold;
+    color: #FFF;
+}
+
+/*=============================================
+Tabla
+===============================================*/
+.lista {
+    width: 100%;
+    padding: 0rem;
+    background-image: url(../img/fondotabla.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla {
+    width: 100%;
+
+}
+
+
+
+.tabla thead {
+    height: 6rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--fuente-titulo);
+    background-color: rgba(10, 61, 99, .5);
+    color: var(--color-crema);
+
+}
+
+.lista td {
+    border-bottom: .1rem solid var(--color-crema);
+}
+
+thead th {
+    text-align: center;
+    font-size: 2rem;
+}
+
+tbody td {
+    font-size: 1.5rem;
+}
+
+label {
+    height: min-content;
+    color: #FFF;
+}
+
+.contenedor-tabla {
+    background-color: red;
+}
+
+
+.alert {
+    font-size: 1.5rem;
+}
+
+.cont-imagen-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10rem;
+    border-bottom: none;
+}
+
+.imagen-delete {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: url(../img/delete.png);
+}
+
+.imagen-update {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: url(../img/update.png);
+}
+
+.a-albumes {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 3rem;
+    color: var(--color-gris);
+    transition: .5s all;
+}
+
+.a-albumes:hover {
+    color: var(--color-crema);
+}
+
+.btn-search{
+    background-color: transparent;
+    border: none;
+}
